@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top;
+    background-size: 1920px;
+    background-repeat: no-repeat ;
+    background-color: var(--Pale_blue) ;
+}
+
+.Mainbox {
+    background-color: white;
+    padding: 0;
+    margin: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 10px 20px 3px rgb(194, 204, 236);
+}
+
+.Mainbox h1 {
+    margin: 1em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 25px;
+    color: var(--Dark_blue);
+    font-weight: bold;
+}
+
+.Mainbox ul {
+    text-align: center;
+    list-style: none;
+    color: var(--Desaturated_blue);
+
+}
+
+.Mainbox ul li {
+    margin: .5em;
+}
+
+.Musicbox {
+    display: flex;
+    align-items: center;
+    margin: 2em 3em;
+    margin-top: 2em;
+    padding: 1.5em 2em;
+    border-radius: 15px;
+    background-color: var(--Very_pale_blue);
+}
+
+.Musicbox p {
+    margin-left: 1em ;
+    margin-right: 4em;
+    color:var(--Desaturated_blue)
+
+}
+
+.Musicbox a {
+    color: var(--Bright_blue);
+}
+
+.Musicbox a:hover {
+    text-decoration: none;
+}
+
+.bold1 {
+    font-weight: bold;
+    color: var(--Dark_blue);
+}
+
+.but1 {
+    text-align: center;
+    margin: 2em 3em;
+    margin-top: 1em;
+    background-color: var(--Bright_blue);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 2px 10px 20px 3px rgb(186, 187, 240);
+    cursor: pointer; 
+}
+
+.but1:hover {
+    background-color: hsl(245, 74%, 59%);
+}
+
+
+.but1 a {
+    color: var(--Very_pale_blue);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.but2 {
+    
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 4em;
+}
+
+.but2 a {
+    color: var(--Desaturated_blue);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.but2 a:hover  {
+    color: black;
+    
+
+} 
+
+@media only screen and (max-width: 960px) {
+    
+   
+
+    .Mainbox {
+        padding:  0;
+        margin: 30px;
+        width: 375px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .Musicbox {
+        display: flex;
+        align-items: center;
+        margin: 2em 1em;
+        margin-top: 2em;
+        padding: 1em 2em;
+        border-radius: 15px;
+        background-color: var(--Very_pale_blue);
+    }
+
+}
